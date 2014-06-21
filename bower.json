@@ -1,0 +1,15 @@
+{
+  "name": "tcombobox",
+  "version": "1.0.0",
+  "authors": [
+    "tindl88@gmail.com"
+  ],
+  "description": "tcombobox",
+  "main": "js/jquery.tcombobox.js,css/jquery.tcombobox.css",
+  "keywords": [
+    "style",
+    "combobox"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tindl88"
+}

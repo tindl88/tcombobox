@@ -1,0 +1,13 @@
+select{min-width:150px;}
+.tComboboxWrap .tCombobox{font-family:'Arial';font-size:13px;border:1px solid #ddd;}
+.tComboboxWrap .tCombobox .clearfix{clear:both;font-size:0px;height:0px}
+.tComboboxWrap .tCombobox .select .text{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;background:#fff;float:left}
+.tComboboxWrap .tCombobox .select .text span{cursor:default;white-space:nowrap;padding:0 10px;line-height:30px;display:block;}
+.tComboboxWrap .tCombobox .select .sep{display:block;float:left;background:url(../images/tcombobox_down.png) no-repeat center center #eee}
+.tComboboxWrap .tCombobox .option{position:absolute;left:0;z-index:4;clear:both}
+.tComboboxWrap .tCombobox ul{overflow:auto;overflow-x:hidden;max-height:200px;border:1px solid #ccc;border-bottom:none;display:none;margin:0;padding:0;list-style:none;background:#fff;min-width:200px}
+.tComboboxWrap .tCombobox li{border-bottom:1px solid #ccc}
+.tComboboxWrap .tCombobox li a{color:#000;text-decoration:none;padding:4px 30px 4px 10px;cursor:default;width:100%;*width:auto;display:block;white-space:nowrap}
+.tComboboxWrap .tCombobox li a:hover{color:#000;background:#ccc}
+.tComboboxWrap .tCombobox .active a{color:red}
+.tComboboxDisabled .text{color:#ddd}

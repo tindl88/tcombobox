@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tCombobox</title>
+	<link rel="stylesheet" href="css/jquery.tcombobox.css">
+</head>
+<body>
+	<label for="chkEnabled"><input type="checkbox" id="chkEnabled" checked="checked" />Enabled</label>
+	<select name="select" id="phone">
+		<option value="lumia520">Lumia 520</option>
+		<option value="lumia620" selected="selected">Lumia 620</option>
+		<option value="lumia720">Lumia 720</option>
+		<option value="lumia820">Lumia 820</option>
+	</select>
+	<br/>
+	<br/>
+	<select name="select" id="car">
+		<option value="bmw">BMW</option>
+		<option value="rollsroyce">Rolls Royce</option>
+		<option value="lamborghini">Lamborghini</option>
+		<option value="ferrari">Ferrari</option>
+	</select>
+	<span class="txtResult"></span>
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.tcombobox.js"></script>
+	<script type="text/javascript">
+		var selects;
+		$(function(){
+			selects = $('select').tCombobox({
+				height: 30,
+				arrowWidth:25,
+				fadeSpeed: 100,
+				onChange: function(){
+					$('.txtResult').text('Value: ' +$(this).val());
+				}
+			});
+			// Call plugin function
+			$('#chkEnabled').click(function(){
+				selects.tCombobox('enabled', $(this).prop('checked'));
+			});
+		});
+		$(window).resize(function(){
+			selects.tCombobox('resize');
+		});
+	</script>
+</body>
+</html>
